@@ -1,11 +1,6 @@
 # typescript-utils
+# THIS PROJECT IS A WIP. NO GUARANTEES. CHECK BACK IN A COUPLE OF MONTHS.
 
 This library was generated with [Nx](https://nx.dev).
 
-## Building
-
-Run `nx build typescript-utils` to build the library.
-
-## Running unit tests
-
-Run `nx test typescript-utils` to execute the unit tests via [Jest](https://jestjs.io).
+TODO: Move this library to its own workspace outside of angular-cdk
