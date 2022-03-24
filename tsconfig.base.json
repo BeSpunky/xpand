@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@bespunky/rxjs": ["packages/rxjs/src/index.ts"],
       "@bespunky/typescript-utils": ["packages/typescript-utils/src/index.ts"]
     }
   },
