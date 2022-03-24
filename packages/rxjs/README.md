@@ -1,10 +1,8 @@
 # rxjs
 
+# THIS PROJECT IS A WIP. NO GUARANTEES. CHECK BACK IN A COUPLE OF MONTHS.
+
 This library was generated with [Nx](https://nx.dev).
-
-## Building
-
-Run `nx build rxjs` to build the library.
 
 ## Running unit tests
 

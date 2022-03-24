@@ -1,13 +1,13 @@
 {
   "root": "packages/rxjs",
-  "sourceRoot": "packages/rxjs/src",
+  "sourceRoot": "packages/rxjs",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/rxjs",
-        "main": "packages/rxjs/src/index.ts",
+        "main": "packages/rxjs/index.ts",
         "tsConfig": "packages/rxjs/tsconfig.lib.json",
         "assets": ["packages/rxjs/*.md"]
       }
