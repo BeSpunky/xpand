@@ -5,6 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "rxjs": "6.6.6",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
