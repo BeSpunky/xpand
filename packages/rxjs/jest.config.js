@@ -6,6 +6,7 @@ module.exports = {
       tsconfig: '<rootDir>/tsconfig.spec.json',
     },
   },
+  setupFilesAfterEnv: ['../../node_modules/@hirez_io/observer-spy/dist/setup-auto-unsubscribe.js'],
   transform: {
     '^.+\\.[tj]s$': 'ts-jest',
   },

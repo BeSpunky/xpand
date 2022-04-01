@@ -1,7 +1,7 @@
 {
   "name": "@bespunky/rxjs",
   "type": "commonjs",
-  "version": "0.0.1-alpha.5",
+  "version": "0.0.1-alpha.7",
   "author": {
     "email": "us@bespunky.io",
     "name": "Shy Agam",
@@ -11,9 +11,12 @@
   "preview": true,
   "private": false,
   "peerDependencies": {
-    "rxjs": "^6.6.6"
+    "rxjs": ">=6.6.6 <=7.5.5"
   },
   "dependencies": {
     "tslib": "^2.1.0"
+  },
+  "devDependencies": {
+    "@hirez_io/observer-spy": "^2.2.0"
   }
 }

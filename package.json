@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
-  "private": true,
+  "private": false,
   "dependencies": {
-    "rxjs": "6.6.6",
+    "rxjs": "^7.5.5",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
+    "@hirez_io/observer-spy": "^2.2.0",
     "@nrwl/cli": "13.9.4",
     "@nrwl/eslint-plugin-nx": "13.9.4",
     "@nrwl/jest": "13.9.4",
@@ -20,6 +21,7 @@
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "~5.10.0",
     "@typescript-eslint/parser": "~5.10.0",
+    "chalk": "4.1.0",
     "eslint": "~8.7.0",
     "eslint-config-prettier": "8.1.0",
     "jest": "27.2.3",
