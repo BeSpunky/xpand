@@ -22,7 +22,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/packages/typescript-utils"],
+      "outputs": ["{workspaceRoot}/coverage/packages/typescript-utils"],
       "options": {
         "jestConfig": "packages/typescript-utils/jest.config.js",
         "passWithNoTests": true
