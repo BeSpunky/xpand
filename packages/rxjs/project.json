@@ -1,5 +1,5 @@
 {
-  "root": "packages/rxjs",
+  "name": "rxjs",
   "sourceRoot": "packages/rxjs/src",
   "targets": {
     "build": {
