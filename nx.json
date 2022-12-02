@@ -15,5 +15,10 @@
         "accessToken": "NjkxMWQzNjAtYmRjZS00ZmM2LTk5MTEtYTNmZjVlNmFjZmYyfHJlYWQtd3JpdGU="
       }
     }
+  },
+  "pluginsConfig": {
+    "@nrwl/js": {
+      "analyzeSourceFiles": true
+    }
   }
 }
