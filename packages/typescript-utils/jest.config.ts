@@ -1,5 +1,5 @@
 /* eslint-disable */
-module.exports = {
+export default {
   displayName: "typescript-utils",
   preset: "../../jest.preset.js",
   globals: {
