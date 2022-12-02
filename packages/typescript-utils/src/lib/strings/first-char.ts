@@ -1,0 +1,1 @@
+export type FirstChar<T> = T extends `${ infer First }${ string }` ? First : unknown;
