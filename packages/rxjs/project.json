@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/packages/rxjs"],
       "options": {
-        "jestConfig": "packages/rxjs/jest.config.js",
+        "jestConfig": "packages/rxjs/jest.config.ts",
         "passWithNoTests": true
       }
     }

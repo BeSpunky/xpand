@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/packages/typescript-utils"],
       "options": {
-        "jestConfig": "packages/typescript-utils/jest.config.js",
+        "jestConfig": "packages/typescript-utils/jest.config.ts",
         "passWithNoTests": true
       }
     }
