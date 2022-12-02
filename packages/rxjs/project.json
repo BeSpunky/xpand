@@ -1,5 +1,6 @@
 {
   "name": "rxjs",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/rxjs/src",
   "targets": {
     "build": {

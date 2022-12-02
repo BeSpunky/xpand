@@ -1,5 +1,6 @@
 {
   "name": "typescript-utils",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/typescript-utils/src",
   "targets": {
     "build": {
