@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs';
+export type ObservableLikeArray = ObservableLike[];
 
 /** Represents an array of observables. */
 export type ObservableArray = Observable<unknown>[];
@@ -17,13 +17,13 @@ export type ObservableArray = Observable<unknown>[];
  * [number, string, boolean]
  * ```
  **/
-export type EmittedArrayTypesOf<T extends ObservableArray> =
-    T extends [Observable<infer T0>, ...(infer TRest)]
+export type EmittedArrayTypesOf<T extends ObservableLikeArray> =
+    T extends [Observable<infer T0> | InteropObservable<infer T0> | Promise<infer T0>, ...(infer TRest)]
         ? TRest['length'] extends 0
             ? [T0]
             // For some reason TS doesn't recognize TRest as ObservableArray automatically even though T extends ObservableArray
             // so it must be verified here again
-            : TRest extends ObservableArray 
+            : TRest extends ObservableLikeArray 
                 ? [T0, ...EmittedArrayTypesOf<TRest>]
                 : never
         : never;
