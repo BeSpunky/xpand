@@ -1,3 +1,6 @@
+import type { InteropObservable, Observable } from 'rxjs';
+import type { ObservableLike } from './observable-like';
+
 export type ObservableLikeArray = ObservableLike[];
 
 /** Represents an array of observables. */
