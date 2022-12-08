@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs';
+import type { Observable } from 'rxjs';
 
 /** Represents a map of observable values. */
 export type ObservableMap = { [key: string]: Observable<unknown> };

@@ -1,4 +1,7 @@
-import { Observable } from 'rxjs';
+import type { InteropObservable, Observable } from 'rxjs';
+import type { ObservableLike } from './observable-like';
+
+export type ObservableLikeArray = ObservableLike[];
 
 /** Represents an array of observables. */
 export type ObservableArray = Observable<unknown>[];
@@ -9,7 +12,7 @@ export type ObservableArray = Observable<unknown>[];
  * 
  * For example, the following:
  * ```ts
- * EmittedArrayTypesOf<[Observable<number>, Observable<string>, Observable<boolean>]>
+ * EmittedTupleOf<[Observable<number>, Observable<string>, Observable<boolean>]>
  * ```
  * 
  * Will produce the following type:
@@ -17,20 +20,20 @@ export type ObservableArray = Observable<unknown>[];
  * [number, string, boolean]
  * ```
  **/
-export type EmittedArrayTypesOf<T extends ObservableArray> =
-    T extends [Observable<infer T0>, ...(infer TRest)]
+export type EmittedTupleOf<T extends ObservableLikeArray> =
+    T extends [Observable<infer T0> | InteropObservable<infer T0> | Promise<infer T0>, ...(infer TRest)]
         ? TRest['length'] extends 0
             ? [T0]
-            // For some reason TS doesn't recognize TRest as ObservableArray automatically even though T extends ObservableArray
+            // For some reason TS doesn't recognize TRest as ObservableLikeArray automatically even though T extends ObservableLikeArray
             // so it must be verified here again
-            : TRest extends ObservableArray 
-                ? [T0, ...EmittedArrayTypesOf<TRest>]
+            : TRest extends ObservableLikeArray 
+                ? [T0, ...EmittedTupleOf<TRest>]
                 : never
         : never;
 
 /**
  * Constructs a tuple type where each element type wrapped with an observable.
- * This is is the reversed version of {@link EmittedArrayTypesOf}.
+ * This is is the reversed version of {@link EmittedTupleOf}.
  * 
  * For example, the following:
  * ```ts
