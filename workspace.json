@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "projects": {
-    "rxjs": "packages/rxjs",
-    "typescript-utils": "packages/typescript-utils"
-  },
-  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
-}

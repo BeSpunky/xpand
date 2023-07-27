@@ -2,7 +2,6 @@
   "name": "@bespunky/typescript-utils",
   "type": "commonjs",
   "version": "0.1.0-alpha.0",
-
   "author": {
     "email": "us@bespunky.io",
     "name": "Shy Agam",
@@ -11,8 +10,7 @@
   "license": "MIT",
   "preview": true,
   "private": false,
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "dependencies": {
     "tslib": "^2.1.0"
   }
