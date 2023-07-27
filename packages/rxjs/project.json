@@ -21,7 +21,7 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/packages/rxjs"],
       "options": {
         "jestConfig": "packages/rxjs/jest.config.ts",
