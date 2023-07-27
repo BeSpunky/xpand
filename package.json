@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "@hirez_io/observer-spy": "^2.2.0",
-    "@nrwl/cli": "13.9.4",
     "@nrwl/eslint-plugin-nx": "16.5.5",
     "@nrwl/jest": "16.5.5",
     "@nrwl/js": "16.5.5",
@@ -32,4 +31,3 @@
     "typescript": "5.1.6"
   }
 }
-
