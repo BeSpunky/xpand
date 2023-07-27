@@ -12,7 +12,6 @@
     "@hirez_io/observer-spy": "^2.2.0",
     "@nrwl/eslint-plugin-nx": "16.5.5",
     "@nrwl/jest": "16.5.5",
-    "@nrwl/js": "16.5.5",
     "@types/jest": "29.4.4",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "5.60.1",
@@ -28,6 +27,7 @@
     "typescript": "5.1.6",
     "nx-cloud": "16.1.1",
     "@nx/workspace": "16.5.5",
-    "@nx/linter": "16.5.5"
+    "@nx/linter": "16.5.5",
+    "@nx/js": "16.5.5"
   }
 }

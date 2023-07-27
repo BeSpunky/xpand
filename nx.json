@@ -17,7 +17,7 @@
     "defaultCollection": "@nx/workspace"
   },
   "pluginsConfig": {
-    "@nrwl/js": {
+    "@nx/js": {
       "analyzeSourceFiles": true
     }
   },
